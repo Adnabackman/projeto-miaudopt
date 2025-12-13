@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo 2', sans-serif;
+    background-image: url(../img/fundo.png);
+    min-height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #ffa142;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo-container img {
+    height: 55px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+
+.logo-au {
+    color: #ff6e61;
+}
+
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-right ion-icon {
+    color: white;
+    font-size: 32px;
+}
+
+.links-login {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 14px;
+}
+
+.links-login a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.links-login .cadastro {
+    opacity: 0.7;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero-pata {
+    width: 110px;
+    margin-bottom: 10px;
+}
+
+.hero-logo {
+    font-size: 60px;
+    color: #4b78a0;
+    text-shadow: 0px 3px 10px #00000015;
+}
+
+.hero-welcome {
+    font-size: 38px;
+    color: #4b78a0;
+    margin-top: -10px;
+}
+
+.hero-text {
+    margin-top: 15px;
+    font-size: 30px;
+    color: #4b78a0;
+    line-height: 1.3;
+}
+
+.btn-adocao {
+    display: inline-block;
+    margin-top: 35px;
+    background-color: #ffd902;
+    color: #ff6e61;
+    padding: 18px 40px;
+    font-size: 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.btn-adocao:hover {
+    transform: scale(1.05);
+}
+
+.sobre-nos {
+    position: relative;
+    width: 100%;
+    padding: 150px 0 180px; 
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+
+.wave-top {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 0;
+}
+
+.wave-top svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo-sobre {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    display: inline-block;
+    background: #ffd902;
+    color: #ff6e61;
+    padding: 12px 35px;
+    border-radius: 40px;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.conteudo-sobre {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.gato,
+.cachorro {
+    position: absolute;
+    bottom: 0;
+    width: 240px;
+    z-index: 1;
+}
+
+.gato {
+    left: 30px;
+}
+
+.cachorro {
+    right: 30px;
+}
+
+@media (max-width: 900px) {
+    .gato, .cachorro {
+        width: 160px;
+    }
+}
+
+@media (max-width: 700px) {
+    .gato, .cachorro {
+        display: none;
+    }
+    .conteudo-sobre {
+        padding: 0 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        margin-top: 120px;
+    }
+    .hero-pata { width: 130px; }
+    .hero-logo { font-size: 70px; }
+    .hero-welcome { font-size: 45px; }
+    .hero-text {
+        font-size: 34px;
+        max-width: 800px;
+        margin: 15px auto 0;
+    }
+    .btn-adocao {
+        font-size: 38px;
+        padding: 20px 50px;
+    }
+    .nav-bar { padding: 0 50px; }
+    .logo-container img { height: 65px; }
+    .logo-text { font-size: 38px; }
+}
+
+@media (min-width: 1366px) {
+    .hero { margin-top: 140px; }
+    .hero-logo { font-size: 80px; }
+    .hero-text { font-size: 36px; max-width: 900px; }
+    .btn-adocao { font-size: 40px; padding: 22px 55px; }
+}
+
+@media (min-width: 1440px) {
+    .nav-bar { padding: 0 70px; }
+    .hero-pata { width: 150px; }
+    .hero-logo { font-size: 85px; }
+    .hero-text { font-size: 38px; max-width: 1000px; }
+    .btn-adocao { font-size: 42px; padding: 25px 60px; }
+}
+
+@media (min-width: 1920px) {
+    .hero { margin-top: 180px; }
+    .hero-logo { font-size: 95px; }
+    .hero-welcome { font-size: 55px; }
+    .hero-text { font-size: 42px; max-width: 1200px; }
+    .btn-adocao { font-size: 46px; padding: 28px 70px; }
+    .logo-container img { height: 80px; }
+    .logo-text { font-size: 45px; }
+    .nav-bar { padding: 0 100px; }
+}

@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fundo.png);
+    font-family: 'Baloo 2', sans-serif;
+    min-height: 100vh;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #ffa142;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+.menu-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-right ion-icon {
+    font-size: 35px;
+    color: white;
+}
+
+.links-login {
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+.links-login a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.links-login a.cadastro {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none !important;   
+    color: inherit;             
+}
+
+.logo-container span {
+    text-decoration: none !important; 
+} 
+
+.logo-text {
+    font-size: 35px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.logo-au {
+    color: #ff6e61;
+}
+
+.logo-container img {
+    height: 70px;
+    width: auto;
+}
+
+.caixa-principal {
+    width: 950px;
+    margin: 50px auto;
+    background-color: #4b78a0;
+    border-radius: 40px;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.caixa-formulario {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.rotulo {
+    color: #ff6e61;
+    background-color: #ffd902;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.botao {
+    background-color: #ffd902;
+    color: #ff6e61;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.botao:hover {
+    opacity: 0.8;
+}
+
+
+@media (min-width: 1024px) {
+
+    body {
+        background-size: 350px;
+    }
+
+    .caixa-principal {
+        width: 900px;       
+        padding: 40px 50px;
+        margin-top: 70px;
+        border-radius: 35px;
+    }
+
+    .caixa-formulario {
+        width: 42%;
+    }
+
+    .titulo {
+        font-size: 36px;   
+        margin-bottom: 28px;
+    }
+
+    .rotulo {
+        font-size: 15px;
+        padding: 5px 14px;
+        margin-bottom: 8px;
+    }
+
+    .campo {
+        font-size: 15px;
+        padding: 12px 18px;
+        border-radius: 28px;
+        margin-bottom: 22px;
+    }
+
+    .botao {
+        margin-top: 10px;
+        padding: 12px 32px;
+        font-size: 18px;
+        border-radius: 22px;
+    }
+
+    .circulo {
+        width: 80px;
+        height: 80px;
+        font-size: 24px;
+        top: 50%;
+        left: calc(50% + 40px);  
+    }
+}

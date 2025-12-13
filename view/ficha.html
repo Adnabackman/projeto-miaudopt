@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiAUdopt - Adoção de Pets</title>
+    <link rel="stylesheet" href="../style/ficha.css">
+    <script src="../js/ficha.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <a href="../index.html" class="logo-container">
+                <img src="../img/logo.png" alt="">
+                <span class="logo-text">
+                    Mi<span class="logo-au">AU</span>dopt
+                </span>
+            </a>
+
+            <div class="menu-right">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="links-login">
+                    <a href="cadastro.html">Entrar</a>
+                    <a href="cadastro.html" class="cadastro">Cadastrar-se</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="pet-selection">
+            <div class="pet-option cat">
+                <div class="circle cat-color">
+                    <img src="../img/gato.png" alt="Desenho de um Gato" class="pet-icon">
+                </div>
+            </div>
+
+            <div class="pet-option dog">
+                <div class="circle dog-color">
+                    <img src="../img/cachorro.png" alt="Desenho de um Cachorro" class="pet-icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="filtro-box">
+            <h3>Filtrar Pets</h3>
+
+            <label>Espécie:</label>
+            <select id="filtro-especie">
+                <option value="">Todos</option>
+                <option value="gato">Gato</option>
+                <option value="cachorro">Cachorro</option>
+            </select>
+
+            <label>Raça:</label>
+            <input type="text" id="filtro-raca" placeholder="Digite a raça">
+
+            <label>Vacinado:</label>
+            <select id="filtro-vacinado">
+                <option value="">Todos</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <label>Castrado:</label>
+            <select id="filtro-castrado">
+                <option value="">Todos</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+
+            <button id="btn-filtrar">Aplicar Filtros</button>
+        </section>
+
+        <section class="card-models">
+
+            <div class="model-container cat-model">
+                <div class="info-card blue-bg">
+                    <img src="../img/gato-real.png" alt="Gato fofo" class="pet-photo">
+
+                    <div class="card-details cat-card">
+                        <span class="pet-name">(Nome do pet)</span>
+                        <p>Idade do pet + M/F</p>
+                        <p>Raça</p>
+                        <p>Porte (pequeno, grande, médio)</p>
+                        <p>Vacinas</p>
+                        <p class="registry-text">Registro [cidade-estado]</p>
+                        <a href="adotante.html" class="btn-card-action">Cadastrar-se</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="model-container dog-model">
+                <div class="info-card red-bg">
+                    <img src="../img/cachorro-real.png" alt="Cachorro Border Collie" class="pet-photo">
+
+                    <div class="card-details dog-card">
+                        <span class="pet-name">(Nome do pet)</span>
+                        <p>Idade do pet + M/F</p>
+                        <p>Raça</p>
+                        <p>Porte (pequeno, grande, médio)</p>
+                        <p>Vacinas</p>
+                        <p class="registry-text">Registro [cidade-estado]</p>
+                        <a href="adotante.html" class="btn-card-action">Cadastrar-se</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

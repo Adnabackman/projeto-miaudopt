@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiAUdopt</title>
+    <link rel="stylesheet" href="../style/pet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <a href="../index.html" class="logo-container">
+                <img src="../img/logo.png" alt="">
+                <span class="logo-text">
+                    Mi<span class="logo-au">AU</span>dopt
+                </span>
+            </a>
+
+            <div class="menu-right">
+                <ion-icon name="person-outline"></ion-icon>
+                <div class="links-login">
+                    <a href="cadastro.html">Entrar</a>
+                    <a href="cadastro.html" class="cadastro">Cadastrar-se</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <div class="form-card__header">
+                <img class="form-card__icon" src="../img/logo.png" alt="Pata Azul">
+                <h2>Cadastre o Pet!</h2>
+            </div>
+
+            <form class="pet-form">
+
+                <div class="form-field">
+                    <label class="form-field__label">Nome do Pet:</label>
+                    <input type="text" class="form-field__input">
+                </div>
+
+                <div class="form-field">
+                    <span class="form-field__label">Espécie:</span>
+                    <div class="form-field__radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="especie" value="cachorro">
+                            <span class="radio-option__text">Cachorro</span>
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="especie" value="gato">
+                            <span class="radio-option__text">Gato</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-row__column">
+                        <span class="form-field__label">Vacinado?</span>
+                        <div class="form-field__radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="vacinado" value="sim">
+                                <span class="radio-option__text">Sim</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="vacinado" value="nao">
+                                <span class="radio-option__text">Não</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-row__column">
+                        <span class="form-field__label">Quantas doses:</span>
+                        <select class="form-field__select">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-row__column">
+                        <span class="form-field__label">Castrado?</span>
+                        <div class="form-field__radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="castrado" value="sim">
+                                <span class="radio-option__text">Sim</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="castrado" value="nao">
+                                <span class="radio-option__text">Não</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row__column">
+                        <span class="form-field__label">Raça:</span>
+                        <select class="form-field__select">
+                            <option>Não informado</option>
+                            <option>Vira-lata</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label class="form-field__label">Descrição:</label>
+                    <textarea class="form-field__textarea"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="form-actions__submit">Cadastrar Pet</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
