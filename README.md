@@ -33,6 +33,7 @@ O projeto está organizado da seguinte forma:
 │   └── index.css
 ├── img/
 │   └── imagens utilizadas no projeto
+```
 
 📁 Organização dos arquivos
 
